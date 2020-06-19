@@ -1,0 +1,464 @@
+body {
+  -webkit-transition: .65s background-color;
+  transition: .65s background-color;
+}
+
+body.darkmode {
+  background-color: #2d2d2d;
+  color: #e8e8e8;
+}
+
+body.darkmode .footer-copyright {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body .footer-copyright, body .footer-copyright a {
+  -webkit-transition: .65s color;
+  transition: .65s color;
+}
+
+body.darkmode .footer-copyright a {
+  color: #e8e8e8;
+}
+
+body main.confirm-page section {
+  -webkit-transition-property: opacity, background-color, color, -webkit-transform, -webkit-box-shadow;
+  transition-property: opacity, background-color, color, -webkit-transform, -webkit-box-shadow;
+  transition-property: transform, opacity, background-color, color, box-shadow;
+  transition-property: transform, opacity, background-color, color, box-shadow, -webkit-transform, -webkit-box-shadow;
+  -webkit-transition-duration: .35s, .35s, .65s, .65s, .65s;
+          transition-duration: .35s, .35s, .65s, .65s, .65s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-delay: .25s, .25s, .0s, .0s, .0s;
+          transition-delay: .25s, .25s, .0s, .0s, .0s;
+}
+
+body.darkmode main.confirm-page section {
+  background-color: rgba(45, 45, 45, 0.7);
+  color: #e8e8e8;
+  -webkit-box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+body main.confirm-page section::before {
+  -webkit-transition: .65s background-color;
+  transition: .65s background-color;
+}
+
+body.darkmode main.confirm-page section::before {
+  background-color: #232323;
+}
+
+body main.confirm-page section form .confirm-content input[type="password"] {
+  transition: 0.25s box-shadow ease, 0.25s -webkit-box-shadow ease, .65s background-color, .65s color, .65s border;
+}
+
+body.darkmode main.confirm-page section form .confirm-content input[type="password"] {
+  background-color: #2d2d2d;
+  color: #e8e8e8;
+  border: 1px solid #1f1f1f;
+}
+
+body.darkmode main.confirm-page section form .confirm-content input[type="password"]:hover {
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.13);
+}
+
+body.darkmode main.confirm-page section form .confirm-content input[type="submit"]:hover {
+  -webkit-box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.12);
+          box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.12);
+}
+
+.alt-header-logo svg .cmd-clr3 {
+  -webkit-transition: .65s fill;
+  transition: .65s fill;
+}
+
+body.darkmode .alt-header-logo svg .cmd-clr3 {
+  fill: #e8e8e8;
+}
+
+body.darkmode .notification {
+  background-image: url("../site-content/branding/cmd_icons_pattern-v2-high-res_dark.jpg");
+}
+
+body.darkmode .notification-content {
+  background-color: #2d2d2d;
+  color: #e8e8e8;
+  -webkit-box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+body.darkmode .notification-content .button:hover {
+  -webkit-box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.12);
+          box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.12);
+}
+
+body.darkmode .button.button-primary:hover {
+  -webkit-box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.12);
+          box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.12);
+}
+
+body.darkmode .toggle-slider-in {
+  background-color: #1f1f1f;
+}
+
+body.darkmode .toggle-slider-in:before {
+  background-color: #2d2d2d;
+}
+
+body.darkmode .toggle-slider input:checked + .toggle-slider-in:before {
+  background-color: #e8e8e8;
+}
+
+body.darkmode header.main-header {
+  background-color: #232323;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+body.darkmode header.main-header nav > ul > li .account .account-main {
+  color: #e8e8e8;
+}
+
+body.darkmode header.main-header nav > ul > li .account .account-main div > span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body.darkmode header.main-header nav > ul > li .account .account-dropdown {
+  background-color: #2d2d2d;
+  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+body.darkmode header.main-header nav > ul > li .account .account-dropdown:before {
+  background-color: #232323;
+  opacity: 0.75;
+}
+
+body.darkmode header.main-header nav > ul > li .account .account-dropdown ul li a {
+  color: #e8e8e8;
+}
+
+body.darkmode header.main-header nav > ul > li .account .account-dropdown ul li a svg {
+  fill: #e8e8e8;
+}
+
+body.darkmode header.main-header nav > ul > li .account .account-dropdown ul li:last-of-type a {
+  color: #e22444;
+}
+
+body.darkmode header.main-header nav > ul > li .account .account-dropdown ul li:last-of-type a svg {
+  fill: #e22444;
+}
+
+body.darkmode header.main-header nav > ul > li .account .account-dropdown ul li:last-of-type:before {
+  background-color: #232323;
+  opacity: 0.75;
+}
+
+body.darkmode header.main-header nav > ul > li a svg .cmd-clr3 {
+  fill: #e8e8e8;
+}
+
+body.darkmode main section.overview-featured:before {
+  background-color: #232323;
+}
+
+body.darkmode main section.overview-featured .overview-featured-nav form label {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body.darkmode main section.overview-featured .overview-featured-nav form label:hover {
+  color: #e8e8e8;
+}
+
+body.darkmode main section.overview-featured .overview-featured-nav form label.active {
+  background-color: #2d2d2d;
+  border: 1px solid #1f1f1f;
+}
+
+body.darkmode main section.overview-featured .overview-featured-nav form label.active:hover {
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.13);
+}
+
+body.darkmode main section.overview-featured .overview-featured-message h3 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body.darkmode main section.overview-featured .overview-featured-message h3 a {
+  color: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-navigation button svg {
+  fill: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-navigation .search-form input[type="search"] {
+  background-color: #232323;
+  color: #e8e8e8;
+  border: 1px solid #1f1f1f;
+}
+
+body.darkmode main section.overview-shots .overview-shots-navigation .search-form input[type="search"]:hover, body.darkmode main section.overview-shots .overview-shots-navigation .search-form input[type="search"]:focus {
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.13);
+}
+
+body.darkmode main section.overview-shots .overview-shots-navigation .sort-form select {
+  border: 2px solid #232323;
+  color: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-navigation .sort-form select:hover {
+  background-color: #232323;
+  border: 2px solid #1f1f1f;
+}
+
+body.darkmode main section.overview-shots .overview-shots-content-item picture img:hover {
+  -webkit-box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+body.darkmode main section.overview-shots .overview-shots-content-item a.shot-profile {
+  color: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-content-item .shot-info {
+  background-color: #2d2d2d;
+  color: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload {
+  background-color: #232323;
+  border: 2px solid #1f1f1f;
+  color: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload:hover {
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.15);
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload svg {
+  fill: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li {
+  background-color: #2d2d2d;
+  border: 1px solid #1f1f1f;
+  -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35);
+}
+
+body.darkmode main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active {
+  background-color: #FFF021;
+  border: 1px solid #FCE724;
+  -webkit-box-shadow: 0px 10px 15px rgba(255, 240, 33, 0.15);
+          box-shadow: 0px 10px 15px rgba(255, 240, 33, 0.15);
+}
+
+body.darkmode main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active:hover {
+  background-color: #FCE724;
+}
+
+body.darkmode main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li svg path {
+  fill: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active svg path {
+  fill: #000000;
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details {
+  background-color: #2d2d2d;
+  color: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span, body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span a:hover {
+  color: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left > p:after {
+  background-color: #232323;
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user a h4 {
+  color: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment:before, body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left h3:before {
+  background-color: #232323;
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button {
+  background-color: #232323;
+  border: 1px solid #1f1f1f;
+  color: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button:hover {
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button svg {
+  fill: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea {
+  background-color: #232323;
+  border: 1px solid #232323;
+  color: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:hover, body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:focus {
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.13);
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form input[type="submit"]:hover {
+  -webkit-box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.12);
+          box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.12);
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right h3 {
+  color: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload {
+  background-color: #232323;
+  border: 2px solid #1f1f1f;
+  color: #e8e8e8;
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload:hover {
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.12);
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .buttons :after {
+  background-color: #232323;
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info ul {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li > ul li svg {
+  fill: #ffffff;
+}
+
+body.darkmode main section.upload-shot form .upload-shot-left .upload-file {
+  border: 3px solid #232323;
+  background-image: url("../site-content/branding/cmd_icons_pattern_large_dark.png");
+  background-color: #2d2d2d;
+}
+
+body.darkmode main section.upload-shot form .upload-shot-left .upload-file:hover {
+  border: 3px solid #FCE724;
+  -webkit-box-shadow: 0px 15px 25px rgba(255, 240, 33, 0.12);
+          box-shadow: 0px 15px 25px rgba(255, 240, 33, 0.12);
+}
+
+body.darkmode main section.upload-shot form .upload-shot-left .upload-file svg .cls-6, body.darkmode main section.upload-shot form .upload-shot-left .upload-file svg .cls-1 {
+  fill: #1f1f1f;
+}
+
+body.darkmode main section.upload-shot form .upload-shot-left .upload-file:hover svg .cls-6 {
+  fill: #FFF021;
+}
+
+body.darkmode main section.upload-shot form .upload-shot-left .upload-file svg .cls-5 {
+  fill: #000000;
+}
+
+body.darkmode main section.upload-shot form .upload-shot-left .upload-file svg .cls-2 {
+  fill: #1f1f1f;
+}
+
+body.darkmode main section.upload-shot form .upload-shot-left .upload-file svg .cls-3 {
+  fill: #2d2d2d;
+}
+
+body.darkmode main section.upload-shot form .upload-shot-left .upload-file svg .cls-7 {
+  fill: #1f1f1f;
+}
+
+body.darkmode main section.upload-shot form .upload-shot-right:after {
+  background-color: #232323;
+}
+
+body.darkmode main section.upload-shot form .upload-shot-right input[type="text"], body.darkmode main section.upload-shot form .upload-shot-right input[type="submit"], body.darkmode main section.upload-shot form .upload-shot-right select, body.darkmode main section.upload-shot form .upload-shot-right textarea, body.darkmode main section.upload-shot form .upload-shot-right #upload-other-students {
+  background-color: #232323;
+  border: 1px solid #1f1f1f;
+  color: #e8e8e8;
+}
+
+body.darkmode main section.upload-shot form .upload-shot-right input[type="text"]:hover, body.darkmode main section.upload-shot form .upload-shot-right input[type="text"]:focus, body.darkmode main section.upload-shot form .upload-shot-right textarea:hover, body.darkmode main section.upload-shot form .upload-shot-right textarea:focus, body.darkmode main section.upload-shot form .upload-shot-right select:hover {
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.13);
+}
+
+body.darkmode main section.upload-shot form .upload-shot-right #upload-other-students {
+  background-color: #232323;
+  border: 1px solid #1f1f1f;
+  color: #e8e8e8;
+}
+
+body.darkmode main section.upload-shot form .upload-shot-right input[type="submit"] {
+  background-color: #FFF021;
+  border: 1px solid #FCE724;
+  color: #000000;
+}
+
+body.darkmode main section.upload-shot form .upload-shot-right input[type="submit"]:hover {
+  -webkit-box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.12);
+          box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.12);
+}
+
+body.darkmode main section.upload-shot form .upload-shot-left progress {
+  background-color: #2d2d2d;
+}
+
+body.darkmode main section.upload-shot form .upload-shot-left .upload-file-swap {
+  background-color: #2d2d2d;
+  border: 1px solid #1f1f1f;
+  -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35);
+}
+
+body.darkmode main section.upload-shot form .upload-shot-left .upload-file-swap:hover {
+  background-color: #FFF021;
+  border: 1px solid #FCE724;
+  -webkit-box-shadow: 0px 10px 15px rgba(255, 240, 33, 0.55);
+          box-shadow: 0px 10px 15px rgba(255, 240, 33, 0.55);
+}
+
+body.darkmode main section.upload-shot form .upload-shot-left .upload-file-swap svg path {
+  fill: #e8e8e8;
+  -webkit-transition: .3s fill ease;
+  transition: .3s fill ease;
+}
+
+body.darkmode main section.upload-shot form .upload-shot-left .upload-file-swap:hover svg path {
+  fill: #000000;
+}
+
+body.darkmode footer {
+  background-color: #232323;
+}
+
+body.darkmode .footer-copyright a {
+  color: #e8e8e8;
+}
+/*# sourceMappingURL=main_darkmode.css.map */

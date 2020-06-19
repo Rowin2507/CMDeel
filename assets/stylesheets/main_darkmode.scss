@@ -1,0 +1,347 @@
+// VARIABLES
+$color_dark_black: #000000;
+$color_dark_main: #2d2d2d;
+$color_dark_main2: #232323;
+$color_dark_main3: #1f1f1f;
+$color_dark_white: #e8e8e8;
+$color_white: #ffffff;
+
+$color_yellow: #FFF021;
+$color_yellow2: #FCE724;
+$color_red: #e22444;
+$color_green: #68d827;
+$color_green2: #68cc27;
+
+
+body {transition: .65s background-color;}
+body.darkmode {background-color: $color_dark_main; color: $color_dark_white;}
+body.darkmode .footer-copyright {color: rgba(255,255,255, 0.5);}
+body .footer-copyright, body .footer-copyright a {transition: .65s color;}
+body.darkmode .footer-copyright a {color: $color_dark_white;}
+
+
+// CONFIRM ACCOUNT DARK MODE STYLING --------------------
+body main.confirm-page section {
+    transition-property: transform, opacity, background-color, color, box-shadow;
+    transition-duration: .35s, .35s, .65s, .65s, .65s;
+    transition-timing-function: ease;
+    transition-delay: .25s, .25s, .0s, .0s, .0s; 
+}
+body.darkmode main.confirm-page section {background-color: rgba(45,45,45, 0.7); color: $color_dark_white; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3)}
+body main.confirm-page section::before {transition: .65s background-color;}
+body.darkmode main.confirm-page section::before {background-color: $color_dark_main2;}
+body main.confirm-page section form .confirm-content input[type="password"] {transition: 0.25s box-shadow ease, 0.25s -webkit-box-shadow ease, .65s background-color, .65s color, .65s border;}
+body.darkmode main.confirm-page section form .confirm-content input[type="password"] {background-color: $color_dark_main; color: $color_dark_white; border: 1px solid $color_dark_main3;}
+body.darkmode main.confirm-page section form .confirm-content input[type="password"]:hover {box-shadow: 0px 15px 15px rgba(0,0,0,0.13);}
+body.darkmode main.confirm-page section form .confirm-content input[type="submit"]:hover {box-shadow: 0px 15px 15px rgba(255,240,33,0.12);}
+.alt-header-logo svg .cmd-clr3 {transition: .65s fill;}
+body.darkmode .alt-header-logo svg .cmd-clr3 {fill: $color_dark_white;}
+
+
+// GENERAL DARK MODE STYLING --------------------
+body.darkmode {
+    // NOTIFICATION ----------
+    .notification {background-image: url('../site-content/branding/cmd_icons_pattern-v2-high-res_dark.jpg');}
+    .notification-content {
+        background-color: $color_dark_main;
+        color: $color_dark_white;
+        box-shadow: 0px 15px 35px rgba(0,0,0,0.3);
+    }
+    .notification-content .button:hover {box-shadow: 0px 15px 15px rgba(255,240,33,0.12);}
+
+    // GENERAL
+    .button.button-primary:hover {
+        box-shadow: 0px 15px 15px rgba(255,240,33,0.12);
+    }
+    .toggle-slider-in {
+        background-color: $color_dark_main3;
+    }
+    .toggle-slider-in:before {
+        background-color: $color_dark_main;
+    }
+    .toggle-slider input:checked + .toggle-slider-in:before {
+        background-color: $color_dark_white;
+    }
+
+    // HEADER
+    header.main-header {
+        background-color: $color_dark_main2;
+        border-bottom: 1px solid $color_dark_main3;
+    }
+    header.main-header nav > ul > li .account .account-main {
+        color: $color_dark_white;
+    }
+    header.main-header nav > ul > li .account .account-main div > span {
+        color: rgba(255,255,255,0.5);
+    }
+    header.main-header nav > ul > li .account .account-dropdown {
+        background-color: $color_dark_main;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    }
+    header.main-header nav > ul > li .account .account-dropdown:before {
+        background-color: $color_dark_main2;
+        opacity: 0.75;
+    }
+    header.main-header nav > ul > li .account .account-dropdown ul li a {
+        color: $color_dark_white;
+    }
+    header.main-header nav > ul > li .account .account-dropdown ul li a svg {
+        fill: $color_dark_white;
+    }
+    header.main-header nav > ul > li .account .account-dropdown ul li:last-of-type a {
+        color: $color_red;
+    }
+    header.main-header nav > ul > li .account .account-dropdown ul li:last-of-type a svg {
+        fill: $color_red;
+    }
+    header.main-header nav > ul > li .account .account-dropdown ul li:last-of-type:before {
+        background-color: $color_dark_main2;
+        opacity: 0.75;
+    }
+    header.main-header nav > ul > li a svg .cmd-clr3 {
+        fill: $color_dark_white;
+    }
+
+    // OVERVIEW
+    main section.overview-featured:before {
+        background-color: $color_dark_main2;
+    }
+    main section.overview-featured .overview-featured-nav form label {
+        color: rgba(255,255,255,0.5);
+    }
+    main section.overview-featured .overview-featured-nav form label:hover {
+        color: $color_dark_white;
+    }
+    main section.overview-featured .overview-featured-nav form label.active {
+        background-color: $color_dark_main;
+        border: 1px solid $color_dark_main3;
+    }
+    main section.overview-featured .overview-featured-nav form label.active:hover {
+        box-shadow: 0px 15px 15px rgba(0,0,0,0.13);
+    }
+    main section.overview-featured .overview-featured-message h3 {
+        color: rgba(255,255,255,0.5);
+    }
+    main section.overview-featured .overview-featured-message h3 a {
+        color: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-navigation button svg {
+        fill: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-navigation .search-form input[type="search"] {
+        background-color: $color_dark_main2; 
+        color: $color_dark_white; border: 1px 
+        solid $color_dark_main3;
+    } 
+    main section.overview-shots .overview-shots-navigation .search-form input[type="search"]:hover, main section.overview-shots .overview-shots-navigation .search-form input[type="search"]:focus {
+        box-shadow: 0px 15px 15px rgba(0,0,0,0.13);
+    }
+    main section.overview-shots .overview-shots-navigation .sort-form select {
+        border: 2px solid $color_dark_main2;
+        color: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-navigation .sort-form select:hover {
+        background-color: $color_dark_main2;
+        border: 2px solid $color_dark_main3;
+    }
+    main section.overview-shots .overview-shots-content-item picture img:hover {
+        box-shadow: 0px 15px 35px rgba(0,0,0,0.35);
+    }
+    main section.overview-shots .overview-shots-content-item a.shot-profile {
+        color: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-content-item .shot-info {
+        background-color: $color_dark_main;
+        color: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload {
+        background-color: $color_dark_main2;
+        border: 2px solid $color_dark_main3;
+        color: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload:hover {
+        box-shadow: 0px 15px 15px rgba(0,0,0,0.15);
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload svg {
+        fill: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li {
+        background-color: $color_dark_main;
+        border: 1px solid $color_dark_main3;
+        box-shadow: 0px 10px 15px rgba(0,0,0,0.35);
+    }
+    main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active {
+        background-color: $color_yellow;
+        border: 1px solid $color_yellow2;
+        box-shadow: 0px 10px 15px rgba(255,240,33,0.15);
+    }
+    main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active:hover {
+        background-color: $color_yellow2;
+    }
+    main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li svg path {
+        fill: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active svg path {
+        fill: $color_dark_black;
+    }
+    main section.overview-shots .overview-shots-overlay-details {
+        background-color: $color_dark_main;
+        color: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span, main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span a {
+        color: rgba(255,255,255,0.5);
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span a:hover {
+        color: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left > p:after {
+        background-color: $color_dark_main2;
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user a h4 {
+        color: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment:before, main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left h3:before {
+        background-color: $color_dark_main2;
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button {
+        background-color: $color_dark_main2;
+        border: 1px solid $color_dark_main3;
+        color: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button:hover {
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button svg {
+        fill: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea {
+        background-color: $color_dark_main2;
+        border: 1px solid $color_dark_main2;
+        color: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:hover, main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:focus {
+        box-shadow: 0px 15px 15px rgba(0,0,0,0.13);
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form input[type="submit"]:hover {
+        box-shadow: 0px 15px 15px rgba(255,240,33,0.12);
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right {
+        color: rgba(255,255,255,0.5);
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right h3 {
+        color: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload {
+        background-color: $color_dark_main2;
+        border: 2px solid $color_dark_main3;
+        color: $color_dark_white;
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload:hover {
+        box-shadow: 0px 15px 15px rgba(0,0,0,0.12);
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .buttons :after {
+        background-color: $color_dark_main2;
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info ul {
+        color: rgba(255,255,255,0.5);
+    }
+    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li > ul li svg {
+        fill: $color_white;
+    }
+
+    // UPLOADEN
+    main section.upload-shot form .upload-shot-left .upload-file {
+        border: 3px solid $color_dark_main2;
+        background-image: url('../site-content/branding/cmd_icons_pattern_large_dark.png');
+        background-color: $color_dark_main;
+    }
+    main section.upload-shot form .upload-shot-left .upload-file:hover {
+        border: 3px solid $color_yellow2;   
+        box-shadow: 0px 15px 25px rgba(255,240,33,0.12);
+    }
+    main section.upload-shot form .upload-shot-left .upload-file svg .cls-6, main section.upload-shot form .upload-shot-left .upload-file svg .cls-1  {
+        fill: $color_dark_main3;
+    }
+    main section.upload-shot form .upload-shot-left .upload-file:hover svg .cls-6 {
+        fill: $color_yellow;
+    }
+    main section.upload-shot form .upload-shot-left .upload-file svg .cls-5 {
+        fill: $color_dark_black;
+    }
+    main section.upload-shot form .upload-shot-left .upload-file svg .cls-2 {
+        fill: $color_dark_main3;
+    }
+    main section.upload-shot form .upload-shot-left .upload-file svg .cls-3 {
+        fill: $color_dark_main;
+    }
+    main section.upload-shot form .upload-shot-left .upload-file svg .cls-7 {
+        fill: $color_dark_main3;
+    }
+    main section.upload-shot form .upload-shot-right:after {
+        background-color: $color_dark_main2;
+    }
+    main section.upload-shot form .upload-shot-right input[type="text"], main section.upload-shot form .upload-shot-right input[type="submit"], main section.upload-shot form .upload-shot-right select, main section.upload-shot form .upload-shot-right textarea, main section.upload-shot form .upload-shot-right #upload-other-students {
+        background-color: $color_dark_main2;
+        border: 1px solid $color_dark_main3;
+        color: $color_dark_white;
+    }
+    main section.upload-shot form .upload-shot-right input[type="text"]:hover, main section.upload-shot form .upload-shot-right input[type="text"]:focus, main section.upload-shot form .upload-shot-right textarea:hover, main section.upload-shot form .upload-shot-right textarea:focus, main section.upload-shot form .upload-shot-right select:hover {
+        box-shadow: 0px 15px 15px rgba(0,0,0,0.13);
+    }
+    main section.upload-shot form .upload-shot-right #upload-other-students {
+        background-color: $color_dark_main2;
+        border: 1px solid $color_dark_main3;
+        color: $color_dark_white;
+    }
+    main section.upload-shot form .upload-shot-right input[type="submit"] {
+        background-color: $color_yellow;
+        border: 1px solid $color_yellow2;
+        color: $color_dark_black;
+    }
+    main section.upload-shot form .upload-shot-right input[type="submit"]:hover {
+        box-shadow: 0px 15px 15px rgba(255,240,33,0.12);
+    }
+    main section.upload-shot form .upload-shot-left progress {
+        background-color: $color_dark_main;
+    }
+    main section.upload-shot form .upload-shot-left .upload-file-swap {
+        background-color: $color_dark_main;
+        border: 1px solid $color_dark_main3;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35);
+    }
+    main section.upload-shot form .upload-shot-left .upload-file-swap:hover {
+        background-color: $color_yellow;
+        border: 1px solid $color_yellow2;
+        box-shadow: 0px 10px 15px rgba(255,240,33,0.55);
+      }
+    main section.upload-shot form .upload-shot-left .upload-file-swap svg path {
+        fill: $color_dark_white;
+        transition: .3s fill ease;
+    }
+    main section.upload-shot form .upload-shot-left .upload-file-swap:hover svg path {
+        fill: $color_dark_black;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    // FOOTER 
+    footer {
+        background-color: $color_dark_main2;
+    }
+    .footer-copyright a {
+        color: $color_dark_white;
+    }
+
+
+
+}
