@@ -5,7 +5,7 @@ session_start();
 
 // PREVENT OR ALLOW ERROR REPORTING
 // error_reporting(0);
-error_reporting(E_ALL | E_STRICT);
+// error_reporting(E_ALL | E_STRICT);
 
 // LOCALHOST - MAMP
 define('DB_HOST','localhost');
@@ -14,10 +14,7 @@ define('DB_USERNAME','root');
 define('DB_PASSWORD','root');
 
 // ONLINE - OEGE
-// define('DB_HOST','localhost');
-// define('DB_NAME','zschmidr1');
-// define('DB_USERNAME','schmidr1');
-// define('DB_PASSWORD','Aw$/eWWZFctWTO');
+// ... TJA :D
 
 // SET UP DEFAULT CONNECTION QUERY
 $dbc = mysqli_connect(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME) or die ('Er is iets goed fout gegaan!');
