@@ -17,6 +17,10 @@ if(isset($_POST["shot_id"])) {
         $upload_date = $row['upload_date'];
         $upload_likes = $row['upload_likes'];
 
+        // UPLOAD SHARE LINK
+        // $upload_link = 'https://oege.ie.hva.nl/~schmidr1/cmdeel/uploads/' . $upload_id;
+        $upload_link = 'https://oege.ie.hva.nl/~schmidr1/cmdeel/index.php?page=useruploads&upload_id=' . $upload_id;
+
         // CHECK IF TAGS ARE GIVEN
         if ($upload_tags == "") {
             $upload_tags_given = "Geen tags beschikbaar.";
@@ -42,12 +46,12 @@ if(isset($_POST["shot_id"])) {
             echo '  
             <div class="shot-details-header">
                 <div>
-                    <a class="shot-details-profile" href="user/' . $user_name . '">
+                    <a class="shot-details-profile" href="index.php?page=user&username=' . $user_name . '">
                         <img src="assets/user-uploads/user-profiles/' . $user_picture . '" alt="Profielfoto van ' . $user_name . '">
                     </a>
                     <div class="shot-details-user">
                         <h2>' . $upload_title . '</h2>
-                        <span class="shot-details-userlink">Geüpload door <a href="user/' . $user_name . '">' . $user_name . '</a></span>
+                        <span class="shot-details-userlink">Geüpload door <a href="index.php?page=user&username=' . $user_name . '">' . $user_name . '</a></span>
                     </div>
                 </div>
                 <div class="buttons">
@@ -79,8 +83,9 @@ if(isset($_POST["shot_id"])) {
                     <h3>Niet verkeerd toch?</h3>
                     <span>Deel wat je ziet of bekijk nog meer werk van <strong>' . $user_name . '!</strong></span>
                     <div class="buttons">
-                        <button class="button button-share-upload" upload-link="https://oege.ie.hva.nl/~schmidr1/cmdeel/uploads/'.$upload_id.'">Delen</button>
-                        <a class="button button-primary" href="user/' . $user_name . '">Profiel</a>
+                        <input id="hidden-link" type="text" value="' . $upload_link . '" />
+                        <button class="button button-share-upload" upload-link="' . $upload_link . '">Delen</button>
+                        <a class="button button-primary" href="index.php?page=user&username=' . $user_name . '">Profiel</a>
                     </div>
                     <div class="shot-details-info">
                         <ul>

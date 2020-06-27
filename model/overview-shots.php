@@ -83,7 +83,7 @@ while($row = mysqli_fetch_array($result)) {
                 </span>
                 
             </div>
-            <a class="shot-profile" href="user/' . $user_name . '">
+            <a class="shot-profile" href="index.php?page=user&username=' . $user_name . '">
                 <img src="assets/user-uploads/user-profiles/' . $user_picture . '" alt="Profielfoto van ' . $user_name . '">
                 <span class="shot-user">' . $user_name . '</span>
             </a>

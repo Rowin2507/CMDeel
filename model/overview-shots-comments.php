@@ -59,11 +59,11 @@ while($row3 = mysqli_fetch_array($resultComments)) {
         echo '
         <div class="shot-details-comment">
             <div class="shot-details-comment-info">
-                <a href="user/' . $user_name . '">
+                <a href="index.php?page=user&username=' . $comment_user_name . '">
                     <img src="assets/user-uploads/user-profiles/' . $comment_user_picture . '" alt="Profielfoto van ' . $comment_user_name . '">
                 </a>
                 <div class="shot-details-comment-info-user">
-                    <a href="user/' . $comment_user_name . '"><h4>' . $comment_user_name . '</h4></a>
+                    <a href="index.php?page=user&username=' . $comment_user_name . '"><h4>' . $comment_user_name . '</h4></a>
                     <span>' . $comment_date_final . '</span>
                 </div>
                 <div class="shot-details-comment-info-likes">
@@ -101,7 +101,7 @@ if(isset($_SESSION['username'])) {
 
     <script>
         // POST COMMENT (UPLOAD / SHOT)
-        $("main section.overview-shots .overview-shots-overlay-details .shot-details-newcomment form").on("submit", function (e) {
+        $("main .overview-shots-overlay-details .shot-details-newcomment form").on("submit", function (e) {
             e.preventDefault();
 
             $.ajax({
@@ -110,9 +110,9 @@ if(isset($_SESSION['username'])) {
             data: $(this).serialize(),
             success: function () {
                 // ALERT AFTER COMMENT POST
-                $("main section.overview-shots .alert-comment").addClass("visible");
+                $("main section .alert-comment").addClass("visible");
                 setTimeout(function() {
-                    $("main section.overview-shots .alert-comment").removeClass("visible");
+                    $("main section .alert-comment").removeClass("visible");
                 }, 4500);
 
                 // REFRESH COMMENT SECTION AFTER COMMENT POST
@@ -123,15 +123,18 @@ if(isset($_SESSION['username'])) {
                     data: {shot_id:shot_id_comment},  
                     success: function(data) {  
                         $(".overview-shots-overlay-details").html(data);  
-                        $("main section.overview-shots .overview-shots-overlay").addClass("visible");
-                        $("body").addClass("no-scroll");
-
-                        // SET MIN-HEIGHT OF MODAL VIEW BACKGROUND (FIX SCROLL OUT OF VIEW)
-                        var shotsOverlay = document.querySelector("main section.overview-shots .overview-shots-overlay-details");
-                        var shotsOverlayHeight = shotsOverlay.offsetHeight;
-                        var shotsOverlayBackgroundHeight = shotsOverlayHeight + 200;
-                        console.log("Hoogte modaal venster: " + shotsOverlayBackgroundHeight + "px");
-                        document.querySelector("main section.overview-shots .overview-shots-overlay-background").style.minHeight = shotsOverlayBackgroundHeight + "px";
+                        
+                        if (document.querySelector("main section.overview-shots .overview-shots-overlay-details") !== null) {  
+                            $("main section.overview-shots .overview-shots-overlay").addClass("visible");
+                            $("body").addClass("no-scroll");
+                            
+                            // SET MIN-HEIGHT OF MODAL VIEW BACKGROUND (FIX SCROLL OUT OF VIEW)
+                            var shotsOverlay = document.querySelector("main section.overview-shots .overview-shots-overlay-details");
+                            var shotsOverlayHeight = shotsOverlay.offsetHeight;
+                            var shotsOverlayBackgroundHeight = shotsOverlayHeight + 200;
+                            console.log("Hoogte modaal venster: " + shotsOverlayBackgroundHeight + "px");
+                            document.querySelector("main section.overview-shots .overview-shots-overlay-background").style.minHeight = shotsOverlayBackgroundHeight + "px";
+                        };
                     }
                 });  
             }

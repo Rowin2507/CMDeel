@@ -32,7 +32,7 @@ if (isset($_POST['login_submit'])) {
 
     } else {
         // IF MAIL IS NOT IN DATABASE
-        $_SESSION['alert'] = '<div class="alert alert-error">Deze gegevens lijken niet helemaal te kloppen..</div>';
+        $_SESSION['alert'] = '<div class="alert alert-error">Dit mailadres is niet bij ons bekend..</div>';
         header("Location: login");
         exit();
     }
