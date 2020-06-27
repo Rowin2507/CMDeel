@@ -15,9 +15,9 @@ define('DB_PASSWORD','root');
 
 // ONLINE - OEGE
 // define('DB_HOST','localhost');
-// define('DB_NAME','zschmidr1');
-// define('DB_USERNAME','schmidr1');
-// define('DB_PASSWORD','Aw$/eWWZFctWTO');
+// define('DB_NAME','...');
+// define('DB_USERNAME','...');
+// define('DB_PASSWORD','...');
 
 // SET UP DEFAULT CONNECTION QUERY
 $dbc = mysqli_connect(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME) or die ('Er is iets goed fout gegaan!');
