@@ -4,7 +4,7 @@
 session_start();
 
 // PREVENT OR ALLOW ERROR REPORTING
-// error_reporting(0);
+error_reporting(0);
 // error_reporting(E_ALL | E_STRICT);
 
 // LOCALHOST - MAMP
@@ -14,7 +14,10 @@ define('DB_USERNAME','root');
 define('DB_PASSWORD','root');
 
 // ONLINE - OEGE
-// ... TJA :D
+// define('DB_HOST','localhost');
+// define('DB_NAME','zschmidr1');
+// define('DB_USERNAME','schmidr1');
+// define('DB_PASSWORD','Aw$/eWWZFctWTO');
 
 // SET UP DEFAULT CONNECTION QUERY
 $dbc = mysqli_connect(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME) or die ('Er is iets goed fout gegaan!');
@@ -29,6 +32,10 @@ mb_internal_encoding('UTF-8');
 mb_http_output('UTF-8');
 mb_http_input('UTF-8');
 mb_regex_encoding('UTF-8');
+
+// SITE URL
+$url = "localhost:8888";
+// $url = "https://oege.ie.hva.nl/~schmidr1/cmdeel";
 
 // IF USER IS LOGGED IN
 if(isset($_SESSION['username'])) {

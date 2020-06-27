@@ -927,7 +927,7 @@ main.login-page section .login-illustration svg .skin, main.login-page section .
   width: 7250px;
   opacity: 0.25;
   -webkit-animation: scrollGood 60s linear infinite;
-          animation: scrollGood 60s linear infinite;
+  animation: scrollGood 60s linear infinite;
 }
 
 main.register-page {
@@ -1117,7 +1117,7 @@ main.register-page section .register-illustration {
   text-align: center;
 }
 
-main.register-page section .register-illustration img {
+main.register-page section .register-illustration svg {
   width: 80%;
 }
 
@@ -1560,14 +1560,14 @@ main section.overview-shots .overview-shots-content.three-inline {
   width: calc(85% + 35px);
 }
 
-main section.overview-shots .overview-shots-content-item {
+main section .overview-shots-content-item {
   position: relative;
   padding: 15px;
   width: 100%;
   z-index: 1;
 }
 
-main section.overview-shots .overview-shots-content-item .shot-file {
+main section .overview-shots-content-item .shot-file {
   display: block;
   position: relative;
   padding-top: 65%;
@@ -1576,7 +1576,7 @@ main section.overview-shots .overview-shots-content-item .shot-file {
   cursor: pointer;
 }
 
-main section.overview-shots .overview-shots-content-item picture {
+main section .overview-shots-content-item picture {
   position: absolute;
   top: 0;
   left: 0;
@@ -1587,7 +1587,7 @@ main section.overview-shots .overview-shots-content-item picture {
   z-index: 1;
 }
 
-main section.overview-shots .overview-shots-content-item picture img {
+main section .overview-shots-content-item picture img {
   position: relative;
   height: 100%;
   width: 100%;
@@ -1602,12 +1602,12 @@ main section.overview-shots .overview-shots-content-item picture img {
   transition: 0.3s ease;
 }
 
-main section.overview-shots .overview-shots-content-item picture img:hover {
+main section .overview-shots-content-item picture img:hover {
   -webkit-box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.125);
           box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.125);
 }
 
-main section.overview-shots .overview-shots-content-item picture:before {
+main section .overview-shots-content-item picture:before {
   content: '';
   display: block;
   width: 100%;
@@ -1626,11 +1626,11 @@ main section.overview-shots .overview-shots-content-item picture:before {
   pointer-events: none;
 }
 
-main section.overview-shots .overview-shots-content-item .shot-content:hover picture:before {
+main section .overview-shots-content-item .shot-content:hover picture:before {
   opacity: 1;
 }
 
-main section.overview-shots .overview-shots-content-item .shot-info {
+main section .overview-shots-content-item .shot-info {
   display: block;
   position: absolute;
   left: 30px;
@@ -1651,14 +1651,14 @@ main section.overview-shots .overview-shots-content-item .shot-info {
   z-index: 3;
 }
 
-main section.overview-shots .overview-shots-content-item .shot-file:hover + .shot-info, main section.overview-shots .overview-shots-content-item .shot-info:hover {
+main section .overview-shots-content-item .shot-file:hover + .shot-info, main section .overview-shots-content-item .shot-info:hover {
   bottom: 65px;
   opacity: 1;
   -webkit-transform: scale(1) translateZ(0);
   transform: scale(1) translateZ(0);
 }
 
-main section.overview-shots .overview-shots-content-item .shot-info .shot-actions {
+main section .overview-shots-content-item .shot-info .shot-actions {
   display: inline-block;
   position: absolute;
   list-style: none;
@@ -1669,7 +1669,7 @@ main section.overview-shots .overview-shots-content-item .shot-info .shot-action
   bottom: 15px;
 }
 
-main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li {
+main section .overview-shots-content-item .shot-info .shot-actions li {
   display: inline-block;
   padding: 8px 0;
   height: 40px;
@@ -1695,57 +1695,57 @@ main section.overview-shots .overview-shots-content-item .shot-info .shot-action
   cursor: pointer;
 }
 
-main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li:nth-child(1) {
+main section .overview-shots-content-item .shot-info .shot-actions li:nth-child(1) {
   -webkit-transition-delay: .0s, .1s, .0s, .0s, .0s;
           transition-delay: .0s, .1s, .0s, .0s, .0s;
 }
 
-main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li:nth-child(2) {
+main section .overview-shots-content-item .shot-info .shot-actions li:nth-child(2) {
   -webkit-transition-delay: .0s, .25s, .0s, .0s, .0s;
           transition-delay: .0s, .25s, .0s, .0s, .0s;
 }
 
-main section.overview-shots .overview-shots-content-item .shot-file:hover + .shot-info .shot-actions li, main section.overview-shots .overview-shots-content-item .shot-info:hover .shot-actions li {
+main section .overview-shots-content-item .shot-file:hover + .shot-info .shot-actions li, main section .overview-shots-content-item .shot-info:hover .shot-actions li {
   opacity: 1;
 }
 
-main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li:hover {
+main section .overview-shots-content-item .shot-info .shot-actions li:hover {
   background-color: #f5f5f7;
   border: 1px solid #e8e8e8;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.shot-pin {
+main section .overview-shots-content-item .shot-info .shot-actions li.shot-pin {
   margin-right: 10px;
 }
 
-main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li svg {
+main section .overview-shots-content-item .shot-info .shot-actions li svg {
   height: 100%;
   width: auto;
 }
 
-main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li svg path {
+main section .overview-shots-content-item .shot-info .shot-actions li svg path {
   fill: #000000;
 }
 
-main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active {
+main section .overview-shots-content-item .shot-info .shot-actions li.active {
   background-color: #FFF021;
   border: 1px solid #FCE724;
   -webkit-box-shadow: 0px 10px 15px rgba(255, 240, 33, 0.55);
           box-shadow: 0px 10px 15px rgba(255, 240, 33, 0.55);
 }
 
-main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active:hover {
+main section .overview-shots-content-item .shot-info .shot-actions li.active:hover {
   background-color: #FCE724;
   border: 1px solid #FCE724;
 }
 
-main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active svg .cls-1 {
+main section .overview-shots-content-item .shot-info .shot-actions li.active svg .cls-1 {
   fill: #000000;
 }
 
-main section.overview-shots .overview-shots-content-item a.shot-profile {
+main section .overview-shots-content-item a.shot-profile {
   display: inline-block;
   margin-top: 12px;
   text-decoration: none;
@@ -1754,11 +1754,11 @@ main section.overview-shots .overview-shots-content-item a.shot-profile {
   transition: 0.3s ease;
 }
 
-main section.overview-shots .overview-shots-content-item a.shot-profile:hover {
+main section .overview-shots-content-item a.shot-profile:hover {
   opacity: 0.65;
 }
 
-main section.overview-shots .overview-shots-content-item a.shot-profile img {
+main section .overview-shots-content-item a.shot-profile img {
   display: inline-block;
   vertical-align: middle;
   height: 23px;
@@ -1768,7 +1768,7 @@ main section.overview-shots .overview-shots-content-item a.shot-profile img {
   border-radius: 50%;
 }
 
-main section.overview-shots .overview-shots-content-item a.shot-profile .shot-user {
+main section .overview-shots-content-item a.shot-profile .shot-user {
   display: inline-block;
   margin-left: 5px;
   vertical-align: middle;
@@ -1799,7 +1799,7 @@ main section.overview-shots .overview-shots-overlay.visible {
   visibility: visible;
 }
 
-main section.overview-shots .overview-shots-overlay-details {
+main section .overview-shots-overlay-details {
   position: relative;
   margin: 0 auto;
   padding: 40px 45px;
@@ -1822,7 +1822,7 @@ main section.overview-shots .overview-shots-overlay.visible .overview-shots-over
   transform: scale(1);
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header {
+main section .overview-shots-overlay-details .shot-details-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1836,18 +1836,18 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-header
   margin-bottom: 25px;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header a.shot-details-profile {
+main section .overview-shots-overlay-details .shot-details-header a.shot-details-profile {
   display: inline-block;
   vertical-align: top;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header a.shot-details-profile:hover {
+main section .overview-shots-overlay-details .shot-details-header a.shot-details-profile:hover {
   opacity: 0.65;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header a.shot-details-profile img {
+main section .overview-shots-overlay-details .shot-details-header a.shot-details-profile img {
   height: 50px;
   width: 50px;
   -o-object-fit: cover;
@@ -1855,7 +1855,7 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-header
   border-radius: 50%;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user {
+main section .overview-shots-overlay-details .shot-details-header .shot-details-user {
   display: inline-block;
   margin-left: 15px;
   vertical-align: top;
@@ -1863,20 +1863,20 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-header
   transform: translateY(-1px);
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user h2 {
+main section .overview-shots-overlay-details .shot-details-header .shot-details-user h2 {
   font-size: 23px;
   font-weight: 700;
   letter-spacing: -0.5px;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span {
+main section .overview-shots-overlay-details .shot-details-header .shot-details-user span {
   display: block;
   margin-top: -2px;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.5);
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span a {
+main section .overview-shots-overlay-details .shot-details-header .shot-details-user span a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 600;
@@ -1884,11 +1884,11 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-header
   transition: 0.3s ease;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span a:hover {
+main section .overview-shots-overlay-details .shot-details-header .shot-details-user span a:hover {
   color: #000000;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons {
+main section .overview-shots-overlay-details .shot-details-header > .buttons {
   -ms-flex-item-align: end;
       align-self: flex-end;
   justify-self: flex-end;
@@ -1896,11 +1896,11 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-header
   transform: translateY(-3px);
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons button {
+main section .overview-shots-overlay-details .shot-details-header > .buttons button {
   display: inline-block;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons button svg {
+main section .overview-shots-overlay-details .shot-details-header > .buttons button svg {
   display: inline-block;
   margin-right: 6px;
   height: 18px;
@@ -1909,14 +1909,14 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-header
   transform: translateY(-1px);
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons button span {
+main section .overview-shots-overlay-details .shot-details-header > .buttons button span {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateY(-1px);
   transform: translateY(-1px);
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload {
+main section .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload {
   margin-right: 10px;
   background-color: #f5f5f7;
   border: 2px solid #efefef;
@@ -1926,14 +1926,14 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-header
   transition: .25s background-color, .25s border, .25s box-shadow ease;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload:hover {
+main section .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload:hover {
   background-color: #efefef;
   border: 2px solid #e8e8e8;
   -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.045);
           box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.045);
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-file {
+main section .overview-shots-overlay-details .shot-details-file {
   display: block;
   overflow: hidden;
   border-radius: 10px;
@@ -1943,17 +1943,17 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-file {
   cursor: zoom-in;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-file picture {
+main section .overview-shots-overlay-details .shot-details-file picture {
   display: block;
   line-height: 0;
   width: 100%;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-file picture img {
+main section .overview-shots-overlay-details .shot-details-file picture img {
   width: 100%;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content {
+main section .overview-shots-overlay-details .shot-details-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1967,19 +1967,19 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   margin-top: 25px;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left {
   padding-right: 35px;
   width: 100%;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left > p {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left > p {
   display: block;
   position: relative;
   margin-bottom: 40px;
   font-size: 18px;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left > p:after {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left > p:after {
   content: '';
   position: absolute;
   left: 0;
@@ -1990,14 +1990,14 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   border-radius: 1px;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left h3 {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left h3 {
   position: relative;
   margin-top: 40px;
   font-size: 20px;
   font-weight: 600;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left h3:before {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left h3:before {
   content: '';
   position: absolute;
   left: 0;
@@ -2008,24 +2008,24 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   border-radius: 1px;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left h3:first-of-type {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left h3:first-of-type {
   margin-top: 0;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left h3:first-of-type:before {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left h3:first-of-type:before {
   display: none;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment {
   position: relative;
   margin-top: 40px;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment:first-of-type {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment:first-of-type {
   margin-top: 20px;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment:before {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment:before {
   content: '';
   position: absolute;
   left: 50px;
@@ -2036,11 +2036,11 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   border-radius: 1px;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment:first-of-type:before {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment:first-of-type:before {
   display: none;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2050,18 +2050,18 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
           flex-direction: row;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info > a {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info > a {
   display: block;
   margin-right: 15px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info > a:hover {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info > a:hover {
   opacity: 0.65;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info > a img {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info > a img {
   height: 35px;
   width: 35px;
   -o-object-fit: cover;
@@ -2069,7 +2069,7 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   border-radius: 50%;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -2077,11 +2077,11 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   transform: translateY(-2px);
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user a {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user a {
   text-decoration: none;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user a h4 {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user a h4 {
   display: block;
   font-size: 18px;
   font-weight: 600;
@@ -2090,18 +2090,18 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   transition: 0.3s ease;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user a:hover h4 {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user a:hover h4 {
   opacity: 0.5;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user span {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user span {
   display: block;
   margin-top: -3px;
   font-size: 14px;
   opacity: 0.5;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2125,14 +2125,14 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   transition: 0.25s ease;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button:hover {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button:hover {
   background-color: #efefef;
   border: 2px solid #e8e8e8;
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.035);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.035);
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button svg {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button svg {
   display: inline-block;
   margin-right: 8px;
   height: 50%;
@@ -2141,11 +2141,11 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   transition: 0.25s opacity ease;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button:hover svg {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button:hover svg {
   opacity: 1;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button span {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button span {
   display: inline-block;
   font-size: 16px;
   font-weight: 400;
@@ -2154,11 +2154,11 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   transition: 0.25s opacity ease;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button:hover span {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button:hover span {
   opacity: 1;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment p {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment p {
   display: block;
   margin-left: 50px;
   margin-top: 8px;
@@ -2166,17 +2166,17 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   white-space: pre-line;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment {
   margin-top: 15px;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form label {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form label {
   display: block;
   margin-bottom: 5px;
   font-weight: 600;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea {
   display: block;
   margin-bottom: 15px;
   padding: 9px 10px;
@@ -2195,12 +2195,12 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   resize: none;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:hover, main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:focus {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:hover, main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:focus {
   -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.045);
           box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.045);
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form input[type="submit"] {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form input[type="submit"] {
   display: block;
   margin-bottom: 0;
   padding: 0 10px;
@@ -2217,17 +2217,17 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   transition: 0.25s ease;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form input[type="submit"]:hover {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form input[type="submit"]:hover {
   background-color: #FCE724;
   -webkit-box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.35);
           box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.35);
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment > p {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment > p {
   color: rgba(0, 0, 0, 0.5);
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment > p a {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment > p a {
   color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
   font-weight: 600;
@@ -2235,23 +2235,23 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   transition: 0.3s ease;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment > p a:hover {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment > p a:hover {
   color: #000000;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right {
   width: 350px;
   color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right h3 {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right h3 {
   font-size: 20px;
   font-weight: 600;
   color: #000000;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .buttons {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .buttons {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2263,7 +2263,7 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   margin-bottom: 40px;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .buttons :after {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .buttons :after {
   content: '';
   position: absolute;
   left: 0;
@@ -2274,14 +2274,20 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   border-radius: 1px;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button {
   margin-top: 12px;
   width: 50%;
   vertical-align: top;
   text-align: center;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right #hidden-link {
+  position: absolute;
+  opacity: 0;
+  left: -5000px;
+}
+
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload {
   margin-right: 10px;
   background-color: #f5f5f7;
   border: 2px solid #efefef;
@@ -2291,14 +2297,14 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   transition: .25s background-color, .25s border, .25s box-shadow ease;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload:hover {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload:hover {
   background-color: #efefef;
   border: 2px solid #e8e8e8;
   -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.045);
           box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.045);
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info ul {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2307,7 +2313,7 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   font-weight: 600;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li > ul {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2318,24 +2324,24 @@ main section.overview-shots .overview-shots-overlay-details .shot-details-conten
   padding: 10px 0;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li > ul li {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li > ul li {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li > ul li:nth-child(1) {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li > ul li:nth-child(1) {
   max-width: 35px;
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li > ul li svg {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li > ul li svg {
   height: 18px;
   opacity: 0.5;
   -webkit-transform: translateY(1px);
   transform: translateY(1px);
 }
 
-main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li:nth-child(3) > ul li svg {
+main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li:nth-child(3) > ul li svg {
   height: 20px;
   -webkit-transform: translateY(0px) translateX(2px);
   transform: translateY(0px) translateX(2px);
@@ -2352,14 +2358,14 @@ main section.overview-shots .overview-shots-overlay-background {
   overflow: hidden;
 }
 
-main section.overview-shots .alert-comment {
+main section.overview-shots .alert-comment, main section.overview-shots .alert-share, main section.shots-uploads-details .alert-share, main section.shots-uploads-details .alert-comment {
   margin: 0 auto -150px auto;
   -webkit-transform: translateX(-50%) scale(0.5);
   transform: translateX(-50%) scale(0.5);
   z-index: 1005;
 }
 
-main section.overview-shots .alert-comment.visible {
+main section.overview-shots .alert-comment.visible, main section.overview-shots .alert-share.visible, main section.shots-uploads-details .alert-share.visible, main section.shots-uploads-details .alert-comment.visible {
   margin: 0 auto 18px auto;
   -webkit-transform: translateX(-50%) scale(1);
   transform: translateX(-50%) scale(1);
@@ -2762,15 +2768,458 @@ main section.upload-shot form .upload-shot-right input[type="submit"]:hover {
           box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.35);
 }
 
-.settings {
-  margin-top: 100px;
+body.upload-details {
+  background-image: url("../site-content/branding/cmd_icons_pattern-v3.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.upload-details header.main-header {
+  background-color: #ffffff;
+}
+
+body.upload-details main {
+  overflow: visible;
+  margin-top: 191px;
+}
+
+main section.shots-uploads-details .overview-shots-overlay-details {
+  z-index: 1;
+  opacity: 0;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.5s opacity ease;
+  transition: 0.5s opacity ease;
+  -webkit-transition-delay: .35s;
+          transition-delay: .35s;
+}
+
+body.loaded main section.shots-uploads-details .overview-shots-overlay-details {
+  opacity: 1;
+}
+
+body.user-profile main {
+  overflow: visible;
+  margin-top: 191px;
+}
+
+main section.user-featured {
+  margin: 0 auto;
+  padding: 65px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+main section .user-featured-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section .user-featured-content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section .user-featured-content-item:nth-child(2) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: 400px;
+}
+
+main section .user-featured-content-name {
+  display: inline-block;
+  margin-left: 35px;
+  text-align: left;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+main section .user-featured-content-item h2 {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  width: 100%;
+}
+
+main section .user-featured-content-item h3 {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.45;
+  width: 100%;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+main section .user-featured-content-item img {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+main section .user-featured-content-item a.button {
+  display: inline-block;
+  margin-top: 15px;
+  border: 2px solid #e8e8e8;
+}
+
+main section .user-featured-content-item p {
+  width: 100%;
+  font-size: 18px;
+  opacity: 0.5;
   text-align: center;
 }
 
-.settings input[type="radio"] {
-  -webkit-appearance: radio;
-     -moz-appearance: radio;
-          appearance: radio;
+main section.user-uploads {
+  margin-top: 100px;
+}
+
+main section.user-uploads .overview-shots-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  margin: 25px auto 0 auto;
+  width: calc(90% + 45px);
+}
+
+main section.account-page-title {
+  margin: 0 auto;
+  padding: 65px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+main section.account-page-title h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+main section.account-page-title h3 {
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.45;
+}
+
+main section.account-page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 65px 65px 65px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+main section.account-page-content aside {
+  width: 285px;
+  margin-right: 100px;
+}
+
+main section.account-page-content aside nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main section.account-page-content aside nav ul li {
+  padding: 0;
+}
+
+main section.account-page-content aside nav ul li a.account-link {
+  position: relative;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+main section.account-page-content aside nav ul li a.account-link:hover {
+  padding-left: 15px;
+  color: #000000;
+}
+
+main section.account-page-content aside nav ul li a.account-link:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 15%;
+  height: 70%;
+  width: 4px;
+  background-color: #efefef;
+  border-radius: 2px;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+main section.account-page-content aside nav ul li a.account-link:hover:before {
+  left: 0;
+  opacity: 1;
+}
+
+main section.account-page-content aside nav ul li a.account-link.active {
+  padding-left: 15px;
+}
+
+main section.account-page-content aside nav ul li a.account-link.active {
+  color: #000000;
+}
+
+main section.account-page-content aside nav ul li a.account-link.active:before {
+  left: 0;
+  background-color: #FFF021;
+  opacity: 1;
+}
+
+main section.account-page-content aside nav ul li a.account-link.logout {
+  color: rgba(226, 36, 68, 0.5);
+}
+
+main section.account-page-content aside nav ul li a.account-link.logout:hover {
+  color: #e22444;
+}
+
+main section.account-page-content aside nav ul li a.account-link.logout:before {
+  background-color: #e22444;
+}
+
+main section.account-page-content .account-content-right {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main section.account-page-content .account-content-right:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 10%;
+  left: -102px;
+  height: 80%;
+  width: 4px;
+  background-color: #efefef;
+  border-radius: 2px;
+}
+
+main section.account-page-content .account-content-right h3 {
+  font-size: 20px;
+}
+
+main section.account-page-content .account-content-right p {
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
+main section.account-page-content .account-content-right form.appearance-form input[type="radio"] {
+  display: none;
+}
+
+main section.account-page-content .account-content-right form.appearance-form label {
+  position: relative;
+  display: block;
+  padding: 10px 15px 10px 60px;
+  margin-bottom: 20px;
+  background-color: #f5f5f7;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.25s box-shadow ease;
+  -webkit-transition: 0.25s -webkit-box-shadow ease;
+  transition: 0.25s -webkit-box-shadow ease;
+  transition: 0.25s box-shadow ease;
+  transition: 0.25s box-shadow ease, 0.25s -webkit-box-shadow ease;
+}
+
+main section.account-page-content .account-content-right form.appearance-form label:hover {
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.045);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.045);
+}
+
+main section.account-page-content .account-content-right form.appearance-form label:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 18px;
+  height: 25px;
+  width: 25px;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #efefef;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+
+main section.account-page-content .account-content-right form input#appearance-light:checked + #appearance-light-label:before {
+  background-image: url("../site-content/images/checkmark.svg");
+  background-color: #FFF021;
+  border: 1px solid #FCE724;
+}
+
+main section.account-page-content .account-content-right form input#appearance-dark:checked + #appearance-dark-label:before {
+  background-image: url("../site-content/images/checkmark.svg");
+  background-color: #FFF021;
+  border: 1px solid #FCE724;
+}
+
+main section.account-page-content .account-content-right form.appearance-form label strong {
+  display: block;
+}
+
+main section.account-page-content .account-content-right form.appearance-form label span {
+  display: block;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+main section.account-page-content .account-content-right hr {
+  margin-top: 65px;
+  border: 1px solid #f5f5f7;
+}
+
+main section.account-page-content .account-content-right form .button-primary {
+  margin-top: 25px;
+}
+
+main section.account-page-content .account-content-right .account-overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main section.account-page-content .account-content-right .account-overview ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main section.account-page-content .account-content-right .account-overview ul:first-of-type {
+  max-width: 300px;
+}
+
+main section.account-page-content .account-content-right .account-overview ul li {
+  padding: 12px 0;
+  border-bottom: 1px solid #efefef;
+}
+
+main section.account-page-content .account-content-right .account-overview ul:first-of-type li {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+main section.account-page-content .account-content-right .button.button-secondary {
+  margin-top: 25px;
+  display: inline-block;
+  border: 2px solid #efefef;
+}
+
+main section.account-page-content .account-content-right .button.button-secondary:hover {
+  background-color: #efefef;
+  border: 2px solid #e8e8e8;
+}
+
+main section.account-page-content .account-content-right form.password-form h3:last-of-type {
+  margin-top: 35px;
+}
+
+main section.account-page-content .account-content-right form input[type="password"], main section.account-page-content .account-content-right form input[type="text"], main section.account-page-content .account-content-right form input[type="email"] {
+  display: block;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  height: 40px;
+  width: 100%;
+  background-color: #efefef;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  font-size: 16px;
+  -webkit-transition: 0.25s box-shadow ease;
+  -webkit-transition: 0.25s -webkit-box-shadow ease;
+  transition: 0.25s -webkit-box-shadow ease;
+  transition: 0.25s box-shadow ease;
+  transition: 0.25s box-shadow ease, 0.25s -webkit-box-shadow ease;
+}
+
+main section.account-page-content .account-content-right form input[type="password"]:hover, main section.account-page-content .account-content-right form.password-form input[type="password"]:focus, main section.account-page-content .account-content-right form input[type="text"]:hover, main section.account-page-content .account-content-right form input[type="text"]:focus, main section.account-page-content .account-content-right form input[type="email"]:hover, main section.account-page-content .account-content-right form input[type="email"]:focus, main section.account-page-content .account-content-right form textarea:hover, main section.account-page-content .account-content-right form textarea:focus {
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.045);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.045);
+}
+
+main section.account-page-content .account-content-right form textarea {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  height: 150px;
+  width: 100%;
+  background-color: #efefef;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  font-size: 16px;
+  -webkit-transition: 0.25s box-shadow ease;
+  -webkit-transition: 0.25s -webkit-box-shadow ease;
+  transition: 0.25s -webkit-box-shadow ease;
+  transition: 0.25s box-shadow ease;
+  transition: 0.25s box-shadow ease, 0.25s -webkit-box-shadow ease;
+  resize: none;
+}
+
+main section.account-page-content .account-content-right form.edit-form h3 {
+  margin-top: 35px;
+}
+
+main section.account-page-content .account-content-right form.edit-form h3:first-of-type {
+  margin-top: 0;
 }
 
 ::-moz-selection {
@@ -2792,7 +3241,7 @@ main section.upload-shot form .upload-shot-right input[type="submit"]:hover {
   main.login-page section, main.register-page section, body main.confirm-page section {
     background-color: #ffffff;
   }
-  main section.overview-shots .overview-shots-content-item picture:before {
+  main section .overview-shots-content-item picture:before {
     background-color: rgba(0, 0, 0, 0.35);
   }
   main section.overview-shots .overview-shots-overlay.visible .overview-shots-overlay-details {
@@ -2819,6 +3268,155 @@ main section.upload-shot form .upload-shot-right input[type="submit"]:hover {
   100% {
     -webkit-transform: translate3d(-50%, 0, 0);
             transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  main section.overview-shots .overview-shots-content {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  main section.overview-shots .overview-shots-navigation button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  main section.overview-shots .overview-shots-navigation .layout-button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  main section.overview-featured .overview-featured-nav {
+    padding: 75px 100px 0 100px;
+  }
+  main section.overview-shots .overview-shots-content, main section.overview-shots .overview-shots-content.three-inline {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  main section .overview-shots-content-item .shot-info {
+    display: none;
+  }
+  main section.overview-shots .overview-shots-navigation .search-form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  main section.overview-shots .overview-shots-navigation .search-form input[type="search"] {
+    height: 46px;
+    width: 85%;
+  }
+  main section .overview-shots-overlay-details .shot-details-header {
+    display: block;
+  }
+  main section .overview-shots-overlay-details .shot-details-header > .buttons {
+    margin-top: 25px;
+  }
+  main section .overview-shots-overlay-details .shot-details-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left {
+    padding-right: 0;
+  }
+  main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+  }
+  main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -18px;
+    height: 2px;
+    width: 100%;
+    background-color: #efefef;
+    border-radius: 1px;
+  }
+  main section.upload-shot form .upload-shot-left {
+    width: 45%;
+    padding-right: 45px;
+  }
+  main section.upload-shot form .upload-shot-left .upload-file {
+    height: 275px;
+    line-height: 275px;
+  }
+  main section.upload-shot form .upload-shot-left #upload-preview {
+    width: calc(100% - 45px);
+    height: 275px;
+    line-height: 275px;
+  }
+  main section.upload-shot form .upload-shot-left .upload-file-swap {
+    right: 67px;
+  }
+  main section.upload-shot form .upload-shot-right {
+    width: 55%;
+    padding-left: 45px;
+  }
+  main section.user-featured {
+    padding: 0;
+  }
+  main section .user-featured-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section .user-featured-content-item:nth-child(2) {
+    margin-top: 50px;
+    max-width: 500px;
+  }
+  main section.user-uploads .overview-shots-content {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  main section.overview-shots .overview-shots-content {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #ffffff;
+  }
+  body * {
+    display: none;
+  }
+  body:after {
+    content: 'Vooralsnog is het nog niet mogelijk om CMDeel te bekijken op een klein scherm..';
+    display: inline-block;
+    position: absolute;
+    top: 50vh;
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    height: 50px;
+    width: 80%;
+    font-size: 35px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+  }
+  body.darkmode:after {
+    color: #ffffff;
   }
 }
 /*# sourceMappingURL=main.css.map */

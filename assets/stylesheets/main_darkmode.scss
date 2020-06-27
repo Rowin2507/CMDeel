@@ -3,6 +3,7 @@ $color_dark_black: #000000;
 $color_dark_main: #2d2d2d;
 $color_dark_main2: #232323;
 $color_dark_main3: #1f1f1f;
+$color_dark_main4: #191919;
 $color_dark_white: #e8e8e8;
 $color_white: #ffffff;
 
@@ -147,105 +148,105 @@ body.darkmode {
     main section.overview-shots .overview-shots-content-item picture img:hover {
         box-shadow: 0px 15px 35px rgba(0,0,0,0.35);
     }
-    main section.overview-shots .overview-shots-content-item a.shot-profile {
+    main section .overview-shots-content-item a.shot-profile {
         color: $color_dark_white;
     }
-    main section.overview-shots .overview-shots-content-item .shot-info {
+    main section .overview-shots-content-item .shot-info {
         background-color: $color_dark_main;
         color: $color_dark_white;
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload {
+    main section .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload {
         background-color: $color_dark_main2;
         border: 2px solid $color_dark_main3;
         color: $color_dark_white;
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload:hover {
+    main section .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload:hover {
         box-shadow: 0px 15px 15px rgba(0,0,0,0.15);
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload svg {
+    main section .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload svg {
         fill: $color_dark_white;
     }
-    main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li {
+    main section .overview-shots-content-item .shot-info .shot-actions li {
         background-color: $color_dark_main;
         border: 1px solid $color_dark_main3;
         box-shadow: 0px 10px 15px rgba(0,0,0,0.35);
     }
-    main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active {
+    main section .overview-shots-content-item .shot-info .shot-actions li.active {
         background-color: $color_yellow;
         border: 1px solid $color_yellow2;
         box-shadow: 0px 10px 15px rgba(255,240,33,0.15);
     }
-    main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active:hover {
+    main section .overview-shots-content-item .shot-info .shot-actions li.active:hover {
         background-color: $color_yellow2;
     }
-    main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li svg path {
+    main section .overview-shots-content-item .shot-info .shot-actions li svg path {
         fill: $color_dark_white;
     }
-    main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active svg path {
+    main section .overview-shots-content-item .shot-info .shot-actions li.active svg path {
         fill: $color_dark_black;
     }
-    main section.overview-shots .overview-shots-overlay-details {
+    main section .overview-shots-overlay-details {
         background-color: $color_dark_main;
         color: $color_dark_white;
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span, main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span a {
+    main section .overview-shots-overlay-details .shot-details-header .shot-details-user span, main section .overview-shots-overlay-details .shot-details-header .shot-details-user span a {
         color: rgba(255,255,255,0.5);
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span a:hover {
+    main section .overview-shots-overlay-details .shot-details-header .shot-details-user span a:hover {
         color: $color_dark_white;
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left > p:after {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left > p:after {
         background-color: $color_dark_main2;
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user a h4 {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user a h4 {
         color: $color_dark_white;
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment:before, main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left h3:before {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment:before, main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left h3:before {
         background-color: $color_dark_main2;
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button {
         background-color: $color_dark_main2;
         border: 1px solid $color_dark_main3;
         color: $color_dark_white;
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button:hover {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button:hover {
         box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button svg {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button svg {
         fill: $color_dark_white;
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea {
         background-color: $color_dark_main2;
         border: 1px solid $color_dark_main2;
         color: $color_dark_white;
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:hover, main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:focus {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:hover, main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:focus {
         box-shadow: 0px 15px 15px rgba(0,0,0,0.13);
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form input[type="submit"]:hover {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form input[type="submit"]:hover {
         box-shadow: 0px 15px 15px rgba(255,240,33,0.12);
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right {
         color: rgba(255,255,255,0.5);
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right h3 {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right h3 {
         color: $color_dark_white;
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload {
         background-color: $color_dark_main2;
         border: 2px solid $color_dark_main3;
         color: $color_dark_white;
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload:hover {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload:hover {
         box-shadow: 0px 15px 15px rgba(0,0,0,0.12);
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .buttons :after {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .buttons :after {
         background-color: $color_dark_main2;
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info ul {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info ul {
         color: rgba(255,255,255,0.5);
     }
-    main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li > ul li svg {
+    main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li > ul li svg {
         fill: $color_white;
     }
 
@@ -323,10 +324,78 @@ body.darkmode {
     }
 
     
+    // USER 
+    main section .user-featured-content-item a.button {
+        border: 2px solid $color_dark_main3;
+        color: $color_dark_white;
+    }
+    main section .user-featured-content-item a.button:hover {
+        box-shadow: 0px 15px 15px rgba(0,0,0,0.12);
+    }
+    
 
-
-
-
+    // ACCOUNT
+    main section.account-page-content aside nav ul li a.account-link {
+        color: rgba(255,255,255,0.5);
+    }
+    main section.account-page-content aside nav ul li a.account-link:hover {
+        color: $color_dark_white;
+    }
+    main section.account-page-content aside nav ul li a.account-link:before {
+        background-color: $color_dark_main2;
+    }
+    main section.account-page-content aside nav ul li a.account-link.active:before {
+        background-color: $color_yellow;
+    }
+    main section.account-page-content aside nav ul li a.account-link.logout {
+        color: rgba(226, 36, 68, 0.5);
+    }
+    main section.account-page-content aside nav ul li a.account-link.logout:hover {
+        color: $color_red;
+    }
+    main section.account-page-content aside nav ul li a.account-link.logout:before {
+        background-color: $color_red;
+    }
+    main section.account-page-content .account-content-right:before {
+        background-color: $color_dark_main2;
+    }
+    main section.account-page-content .account-content-right form.appearance-form label {
+        background-color: $color_dark_main2;
+        border: 1px solid $color_dark_main3;
+    }
+    main section.account-page-content .account-content-right form.appearance-form label:hover {
+        box-shadow: 0px 15px 15px rgba(0,0,0,0.12);
+    }
+    main section.account-page-content .account-content-right form.appearance-form label:before {
+        background-color: $color_dark_main3;
+        border: 1px solid $color_dark_main4;
+    }
+    main section.account-page-content .account-content-right hr {
+        border: 1px solid $color_dark_main2;
+    }
+    main section.account-page-content .account-content-right .account-overview ul li {
+        border-bottom: 1px solid $color_dark_main2;
+    }
+    main section.account-page-content .account-content-right .account-overview ul:first-of-type li {
+        color: rgba(255,255,255,0.5);
+    }
+    main section.account-page-content .account-content-right .button.button-secondary {
+        border: 2px solid $color_dark_main2;
+        color: $color_dark_white;
+    }
+    main section.account-page-content .account-content-right .button.button-secondary:hover {
+        background-color: $color_dark_main2;
+        border: 2px solid $color_dark_main3;
+        box-shadow: 0px 15px 15px rgba(0,0,0,0.12);
+    }
+    main section.account-page-content .account-content-right form input[type="password"], main section.account-page-content .account-content-right form input[type="text"], main section.account-page-content .account-content-right form input[type="email"], main section.account-page-content .account-content-right form textarea {
+        background-color: $color_dark_main2;
+        border: 1px solid $color_dark_main3;
+        color: $color_dark_white;
+    }
+    main section.account-page-content .account-content-right form input[type="password"]:hover, main section.account-page-content .account-content-right form.password-form input[type="password"]:focus, main section.account-page-content .account-content-right form input[type="text"]:hover, main section.account-page-content .account-content-right form input[type="text"]:focus, main section.account-page-content .account-content-right form input[type="email"]:hover, main section.account-page-content .account-content-right form input[type="email"]:focus, main section.account-page-content .account-content-right form textarea:hover, main section.account-page-content .account-content-right form textarea:focus {
+        box-shadow: 0px 15px 15px rgba(0,0,0,0.12);
+    }
 
 
 
@@ -344,4 +413,11 @@ body.darkmode {
 
 
 
+}
+
+body.darkmode.upload-details {
+    background-image: url('../site-content/branding/cmd_icons_pattern-v3_dark.svg');
+} 
+body.darkmode.upload-details header.main-header, body.darkmode.upload-details footer {
+    background-color: $color_dark_main4;
 }

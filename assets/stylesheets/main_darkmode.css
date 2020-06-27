@@ -221,140 +221,140 @@ body.darkmode main section.overview-shots .overview-shots-content-item picture i
           box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.35);
 }
 
-body.darkmode main section.overview-shots .overview-shots-content-item a.shot-profile {
+body.darkmode main section .overview-shots-content-item a.shot-profile {
   color: #e8e8e8;
 }
 
-body.darkmode main section.overview-shots .overview-shots-content-item .shot-info {
+body.darkmode main section .overview-shots-content-item .shot-info {
   background-color: #2d2d2d;
   color: #e8e8e8;
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload {
+body.darkmode main section .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload {
   background-color: #232323;
   border: 2px solid #1f1f1f;
   color: #e8e8e8;
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload:hover {
+body.darkmode main section .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload:hover {
   -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.15);
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload svg {
+body.darkmode main section .overview-shots-overlay-details .shot-details-header > .buttons .button-share-upload svg {
   fill: #e8e8e8;
 }
 
-body.darkmode main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li {
+body.darkmode main section .overview-shots-content-item .shot-info .shot-actions li {
   background-color: #2d2d2d;
   border: 1px solid #1f1f1f;
   -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35);
           box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35);
 }
 
-body.darkmode main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active {
+body.darkmode main section .overview-shots-content-item .shot-info .shot-actions li.active {
   background-color: #FFF021;
   border: 1px solid #FCE724;
   -webkit-box-shadow: 0px 10px 15px rgba(255, 240, 33, 0.15);
           box-shadow: 0px 10px 15px rgba(255, 240, 33, 0.15);
 }
 
-body.darkmode main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active:hover {
+body.darkmode main section .overview-shots-content-item .shot-info .shot-actions li.active:hover {
   background-color: #FCE724;
 }
 
-body.darkmode main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li svg path {
+body.darkmode main section .overview-shots-content-item .shot-info .shot-actions li svg path {
   fill: #e8e8e8;
 }
 
-body.darkmode main section.overview-shots .overview-shots-content-item .shot-info .shot-actions li.active svg path {
+body.darkmode main section .overview-shots-content-item .shot-info .shot-actions li.active svg path {
   fill: #000000;
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details {
+body.darkmode main section .overview-shots-overlay-details {
   background-color: #2d2d2d;
   color: #e8e8e8;
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span, body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span a {
+body.darkmode main section .overview-shots-overlay-details .shot-details-header .shot-details-user span, body.darkmode main section .overview-shots-overlay-details .shot-details-header .shot-details-user span a {
   color: rgba(255, 255, 255, 0.5);
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-header .shot-details-user span a:hover {
+body.darkmode main section .overview-shots-overlay-details .shot-details-header .shot-details-user span a:hover {
   color: #e8e8e8;
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left > p:after {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left > p:after {
   background-color: #232323;
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user a h4 {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-user a h4 {
   color: #e8e8e8;
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment:before, body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left h3:before {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment:before, body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left h3:before {
   background-color: #232323;
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button {
   background-color: #232323;
   border: 1px solid #1f1f1f;
   color: #e8e8e8;
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button:hover {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button:hover {
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button svg {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-comment-info .shot-details-comment-info-likes button svg {
   fill: #e8e8e8;
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea {
   background-color: #232323;
   border: 1px solid #232323;
   color: #e8e8e8;
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:hover, body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:focus {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:hover, body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form textarea:focus {
   -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.13);
           box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.13);
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form input[type="submit"]:hover {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-left .shot-details-newcomment form input[type="submit"]:hover {
   -webkit-box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.12);
           box-shadow: 0px 15px 15px rgba(255, 240, 33, 0.12);
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right {
   color: rgba(255, 255, 255, 0.5);
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right h3 {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right h3 {
   color: #e8e8e8;
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload {
   background-color: #232323;
   border: 2px solid #1f1f1f;
   color: #e8e8e8;
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload:hover {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload:hover {
   -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.12);
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .buttons :after {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .buttons :after {
   background-color: #232323;
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info ul {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info ul {
   color: rgba(255, 255, 255, 0.5);
 }
 
-body.darkmode main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li > ul li svg {
+body.darkmode main section .overview-shots-overlay-details .shot-details-content .shot-details-content-right .shot-details-info > ul > li > ul li svg {
   fill: #ffffff;
 }
 
@@ -454,11 +454,111 @@ body.darkmode main section.upload-shot form .upload-shot-left .upload-file-swap:
   fill: #000000;
 }
 
+body.darkmode main section .user-featured-content-item a.button {
+  border: 2px solid #1f1f1f;
+  color: #e8e8e8;
+}
+
+body.darkmode main section .user-featured-content-item a.button:hover {
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.12);
+}
+
+body.darkmode main section.account-page-content aside nav ul li a.account-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body.darkmode main section.account-page-content aside nav ul li a.account-link:hover {
+  color: #e8e8e8;
+}
+
+body.darkmode main section.account-page-content aside nav ul li a.account-link:before {
+  background-color: #232323;
+}
+
+body.darkmode main section.account-page-content aside nav ul li a.account-link.active:before {
+  background-color: #FFF021;
+}
+
+body.darkmode main section.account-page-content aside nav ul li a.account-link.logout {
+  color: rgba(226, 36, 68, 0.5);
+}
+
+body.darkmode main section.account-page-content aside nav ul li a.account-link.logout:hover {
+  color: #e22444;
+}
+
+body.darkmode main section.account-page-content aside nav ul li a.account-link.logout:before {
+  background-color: #e22444;
+}
+
+body.darkmode main section.account-page-content .account-content-right:before {
+  background-color: #232323;
+}
+
+body.darkmode main section.account-page-content .account-content-right form.appearance-form label {
+  background-color: #232323;
+  border: 1px solid #1f1f1f;
+}
+
+body.darkmode main section.account-page-content .account-content-right form.appearance-form label:hover {
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.12);
+}
+
+body.darkmode main section.account-page-content .account-content-right form.appearance-form label:before {
+  background-color: #1f1f1f;
+  border: 1px solid #191919;
+}
+
+body.darkmode main section.account-page-content .account-content-right hr {
+  border: 1px solid #232323;
+}
+
+body.darkmode main section.account-page-content .account-content-right .account-overview ul li {
+  border-bottom: 1px solid #232323;
+}
+
+body.darkmode main section.account-page-content .account-content-right .account-overview ul:first-of-type li {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body.darkmode main section.account-page-content .account-content-right .button.button-secondary {
+  border: 2px solid #232323;
+  color: #e8e8e8;
+}
+
+body.darkmode main section.account-page-content .account-content-right .button.button-secondary:hover {
+  background-color: #232323;
+  border: 2px solid #1f1f1f;
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.12);
+}
+
+body.darkmode main section.account-page-content .account-content-right form input[type="password"], body.darkmode main section.account-page-content .account-content-right form input[type="text"], body.darkmode main section.account-page-content .account-content-right form input[type="email"], body.darkmode main section.account-page-content .account-content-right form textarea {
+  background-color: #232323;
+  border: 1px solid #1f1f1f;
+  color: #e8e8e8;
+}
+
+body.darkmode main section.account-page-content .account-content-right form input[type="password"]:hover, body.darkmode main section.account-page-content .account-content-right form.password-form input[type="password"]:focus, body.darkmode main section.account-page-content .account-content-right form input[type="text"]:hover, body.darkmode main section.account-page-content .account-content-right form input[type="text"]:focus, body.darkmode main section.account-page-content .account-content-right form input[type="email"]:hover, body.darkmode main section.account-page-content .account-content-right form input[type="email"]:focus, body.darkmode main section.account-page-content .account-content-right form textarea:hover, body.darkmode main section.account-page-content .account-content-right form textarea:focus {
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.12);
+}
+
 body.darkmode footer {
   background-color: #232323;
 }
 
 body.darkmode .footer-copyright a {
   color: #e8e8e8;
+}
+
+body.darkmode.upload-details {
+  background-image: url("../site-content/branding/cmd_icons_pattern-v3_dark.svg");
+}
+
+body.darkmode.upload-details header.main-header, body.darkmode.upload-details footer {
+  background-color: #191919;
 }
 /*# sourceMappingURL=main_darkmode.css.map */

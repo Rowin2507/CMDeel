@@ -69,9 +69,9 @@ if (document.querySelector('.overlay') !== null) {
 
   // GENERATE RANDOM SKIN COLOR + HAIR COLOR
   function randomColorLogin() {
-    var skinColors = ['efbc97', 'cc8a69', '8c5834', '593225'];
-    var hairColors = ['a07b5d', '72351c', '513420', '231105'];
-    var randomColor = Math.floor(Math.random() * 4);
+    var skinColors = ['FDA57D', 'efbc97', 'cc8a69', '8c5834', '593225'];
+    var hairColors = ['F55F44', 'a07b5d', '72351c', '513420', '231105'];
+    var randomColor = Math.floor(Math.random() * 5);
 
     var skinColor = document.querySelectorAll('main.login-page section .login-illustration svg .skin');
     for (var i = 0; i < skinColor.length; ++i) {
@@ -102,26 +102,26 @@ if (document.querySelector('.register-page #username') !== null) {
   });
 
   // GENERATE RANDOM SKIN + HAIR COLOR
-  // function randomColorLogin() {
-  //   var skinColors = ['efbc97', 'cc8a69', '8c5834', '593225'];
-  //   var hairColors = ['a07b5d', '72351c', '513420', '231105'];
-  //   var randomColor = Math.floor(Math.random() * 4);
+  function randomColorLogin() {
+    var skinColors = ['FDA57D', 'efbc97', 'cc8a69', '8c5834', '593225'];
+    var hairColors = ['F55F44', 'a07b5d', '72351c', '513420', '231105'];
+    var randomColor = Math.floor(Math.random() * 5);
 
-  //   var skinColor = document.querySelectorAll('main.login-page section .login-illustration svg .skin');
-  //   for (var i = 0; i < skinColor.length; ++i) {
-  //     var item = skinColor[i];  
-  //     item.style.fill=skinColors[randomColor];
-  //     // console.log('Huidskleur: #' + skinColors[randomColor]);
-  //   }
+    var skinColor = document.querySelectorAll('main.register-page section .register-illustration svg .skin');
+    for (var i = 0; i < skinColor.length; ++i) {
+      var item = skinColor[i];  
+      item.style.fill=skinColors[randomColor];
+      // console.log('Huidskleur: #' + skinColors[randomColor]);
+    }
 
-  //   var hairColor = document.querySelectorAll('main.login-page section .login-illustration svg .hair');
-  //   for (var i = 0; i < hairColor.length; ++i) {
-  //     var item = hairColor[i];  
-  //     item.style.fill=hairColors[randomColor];
-  //     // console.log('Haarkleur: #' + hairColors[randomColor]);
-  //   }
-  // }
-  // randomColorLogin();  
+    var hairColor = document.querySelectorAll('main.register-page section .register-illustration svg .hair');
+    for (var i = 0; i < hairColor.length; ++i) {
+      var item = hairColor[i];  
+      item.style.fill=hairColors[randomColor];
+      // console.log('Haarkleur: #' + hairColors[randomColor]);
+    }
+  }
+  randomColorLogin();  
 }
 
 
@@ -270,7 +270,7 @@ if (document.querySelector('.upload-shot') !== null) {
 
 
 // OVERVIEW -------------------------
-if (document.querySelector('.overview-shots-content') !== null) {  
+if (document.querySelector('.overview-shots .overview-shots-content') !== null) {  
   // CLOSE UPLOAD (SHOT) OVERLAY ON CLICK
   document.querySelector('main section.overview-shots .overview-shots-overlay-background').onclick = function() {
     document.querySelector('main section.overview-shots .overview-shots-overlay').classList.remove('visible');
@@ -312,6 +312,11 @@ if (document.querySelector('.overview-shots-content') !== null) {
         $('main section.overview-featured .overview-featured-nav form label.active').not(this).removeClass('active');
     };
   }
+
+
+
+
+
 
 
 // // ADD CLASS (SELECTED) WHEN SELECTING TRAIN
