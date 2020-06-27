@@ -24,9 +24,6 @@ switch ($page) {
     include 'views/overview.php';
   break;
 
-  // case 'account':
-  //   include 'views/account.php';
-  // break;
   case 'upload':
     include 'views/upload.php';
   break;
