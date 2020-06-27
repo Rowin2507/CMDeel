@@ -30,8 +30,26 @@ switch ($page) {
   case 'upload':
     include 'views/upload.php';
   break;
-  case 'settings':
-    include 'views/settings.php';
+  case 'user':
+    include 'model/user.php';
+  break;
+  case 'useruploads':
+    include 'model/useruploads.php';
+  break;
+  case 'account':
+    include 'views/account.php';
+  break;
+  case 'account-password':
+    include 'views/account-password.php';
+  break;
+  case 'account-edit':
+    include 'views/account-edit.php';
+  break;
+  case 'account-settings':
+    include 'views/account-settings.php';
+  break;
+  case 'account-data':
+    include 'views/account-data.php';
   break;
 
 
