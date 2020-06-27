@@ -1,5 +1,5 @@
 <?php 
-// include 'model/test.php';
+
 $page_title = 'CMDeel';
 
 ?>
@@ -86,6 +86,7 @@ $page_title = 'CMDeel';
         <div class="overview-shots-overlay-background"></div>
     </div>
     <div class="alert alert-succes alert-comment">Je reactie is geplaatst! Nu even wachten tot iemand reageerd..</div>
+    <div class="alert alert-succes alert-share">De deelbare link is gekopieerd! Delen maar..</div>
 </section>
 
 
@@ -120,6 +121,21 @@ $page_title = 'CMDeel';
                         shotTitleFinal = shotTitleAltered + "..";
                         shotTitle.textContent = shotTitleFinal;
                     } 
+
+                    // COPY UPLOAD LINK ON CLICK (SHARE)
+                    // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_copy_clipboard
+                    document.querySelector('main section.overview-shots .overview-shots-overlay-details .shot-details-content .shot-details-content-right .button-share-upload').onclick = function() {
+                        var uploadLink = document.getElementById("hidden-link");
+                        uploadLink.select();
+                        uploadLink.setSelectionRange(0, 99999);
+                        document.execCommand("copy");
+
+                        // ALERT AFTER LINK HAS BEEN COPIED
+                        document.querySelector('main section.overview-shots .alert-share').classList.add('visible');
+                        setTimeout(function() {
+                            document.querySelector('main section.overview-shots .alert-share').classList.remove('visible');
+                        }, 4500);
+                    };
                 }
             });  
         });  

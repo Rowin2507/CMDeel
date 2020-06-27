@@ -55,7 +55,7 @@ if (mysqli_num_rows($result) > 0) {
           <h2>Bedankt ' . $first_name . '!</h2>
           <img src="' . $notification_gif . '" alt="CMDeel icon - sunglasses" />
           <p class="completed-text">Je inschrijving is volledig afgerond.</p>
-          <p><a href="overview" class="button button-primary">Naar de beginpagina</a></p>
+          <p><a href="login" class="button button-primary">Naar de login pagina..</a></p>
         </div>
       </div>
       <script src="assets/scripts/main.js"></script>';
